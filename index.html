@@ -7,17 +7,21 @@
     </head>
     <body>
         <div class="maindiv">
-            <h1>Simple Interest Calculator</h1>
+            <div class="titlediv">
+                <h1>Simple Interest Calculator</h1>
+            </div>
+            
+            <div class="subdiv">
                 <!-- Add <label> tags to clarify purpose of text-->
-                <label for="principal">Amount</label><span>	</span>
-                <input type="number"  id="principal" value="1000000"><span></span><br/>
+                <label for="principal">Amount</label>
+                <input type="number"  id="principal" value=><br/><br/>
 
-                <!-- oninput displays how the rate changes as user drags the slider -->
-                <label for="rate"></label>Interest Rate</label>
+                <!-- oninput displays how the rate changes as user drags the slider -->                
+                <label for="rate">Interest Rate</label>
                 <input type="range" min="1" max="20" step="0.25" value="10.25" id="rate" oninput="displayRateValue()">  
-                <span id="rate-val">10.25%</span><br/>
-                
-                <label for="years">No. of Years</label>
+                <span id="rate-val">10.25%</span><br/><br/>
+
+                <label for="years">No. of Years</label>  
                 <select name="years"  id="years">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -29,13 +33,18 @@
                     <option value="8">8</option>
                     <option value="9">9</option>
                     <option value="10">10</option>
-                </select>  <br/>
+                </select>  <br/><br/>
                 <button onclick="compute()">Compute Interest</button>
-            <br>
-            <span id="result">
-                <!-- result computed by script.js will be placed here -->
-            </span><br/>
-            <footer>&copy; Everyone Can Get Rich</footer>      
+
+                <br/><br/>
+                <span id="result">
+                    <!-- result computed by script.js will be placed here -->
+                </span><br/>
+            </div>
+
+            <div class="footerdiv">
+                <footer>&copy; Everyone Can Get Rich</footer>      
+            </div>
         </div>        
     </body>
 </html>

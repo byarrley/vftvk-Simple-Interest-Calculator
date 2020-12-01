@@ -13,12 +13,11 @@ function compute()
 
     //Computations
     var interest = principal * years * rate /100;
-    var total = principal + interest;
     var currentYear = new Date().getFullYear();
     var futureYear = currentYear + years;
     
     //Set result
-    document.getElementById("result").innerHTML = "If you deposit <mark>" + principal + "</mark> at an interest rate of <mark>" + rate + "%</mark>.  You will receive an amount of <mark>" + total + "</mark>, in the year <mark>" + futureYear + "</mark>";
+    document.getElementById("result").innerHTML = "If you deposit <mark>" + principal + "</mark> at an interest rate of <mark>" + rate + "%</mark>.  You will receive an amount of <mark>" + interest + "</mark>, in the year <mark>" + futureYear + "</mark><br/>";
 }
 
 function displayRateValue() {
