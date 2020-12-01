@@ -5,8 +5,8 @@ function compute()
     var rate = parseFloat(document.getElementById("rate").value);
     var years = parseFloat(document.getElementById("years").value);
     
-    //Input validation
-    if (principal <= 0) {
+    //Input validation - empty field will return NaN
+    if (principal <= 0 || isNaN(principal)) {
         alert("Enter a positive number");
         return;
     }
