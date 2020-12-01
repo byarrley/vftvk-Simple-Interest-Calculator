@@ -21,7 +21,7 @@ h1{
 .maindiv{    
     background-color:white;
     color:black;
-    width:80%;
+    width:300px;
     padding:20px;
     border-radius:25px; 
 
@@ -30,11 +30,11 @@ h1{
     flex-direction:column;
 }
 .titlediv {    
-    width:90%;
+    width:300px;
 }
 .subdiv {
-    width:70%;
+    width:210px;
 }
 .footerdiv {
-    width:90%;
+    width:300px;
 }
