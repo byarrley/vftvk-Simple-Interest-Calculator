@@ -8,6 +8,7 @@ function compute()
     //Input validation - empty field will return NaN
     if (principal <= 0 || isNaN(principal)) {
         alert("Enter a positive number");
+        document.getElementById("principal").focus();
         return;
     }
 
